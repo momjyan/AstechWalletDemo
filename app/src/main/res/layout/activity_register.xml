@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.sean.registrationactivity_lesson15.RegisterActivity">
+
+    <EditText
+        android:background="@drawable/borders"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/registerMail"
+        android:typeface="monospace"
+        android:hint="Enter your email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:typeface="monospace"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/borders"
+        android:id="@+id/registerPassword"
+        android:hint="Enter your password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/borders"
+        android:id="@+id/registerConfirmPass"
+        android:typeface="monospace"
+        android:hint="Confirm Password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/button_curve"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/registerButton"
+        android:text="Register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/button_curve"
+        android:id="@+id/returnToLoginButton"
+        android:text="retun to login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

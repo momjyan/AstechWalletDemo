@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/borders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:background="#228BB6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:text="Sign Up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            android:textColor="#008AC4"
+            android:text="FINAL STEP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="e.g. 12 345 678 91 01"
+                android:layout_weight="5"
+                android:background="@drawable/borders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="I agree to AsTech Wallet Terms and Conditions and Privacy Policy. I'm aware that I may receive communication from AsTech Wallet and understand that I can change my communication preferences at any time."
+                android:layout_width="wrap_content"
+                android:layout_height="97dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="Back"
+        android:background="@drawable/overview_border"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/button_curve"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:text="Open account"
+        android:layout_width="150dp"
+        android:layout_height="55dp" />
+
+</RelativeLayout>

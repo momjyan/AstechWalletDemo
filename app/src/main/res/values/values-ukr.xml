@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_email_ukr">Введіть свою пошту</string>
+    <string name="enter_password_ukr">Введіть ваш пароль</string>
+    <string name="login_button_text_ukr">Приєднатися</string>
+    <string name="join_button_text_ukr">Приєднуйтесь</string>
+    <string name="forgot_password_ukr">Забули пароль?</string>
+    <string name="password_view_ukr">Пароль</string>
+    <string name="back_to_login_ukr">Назад</string>
+    <string name="restore_ukr">Відновлення</string>
+</resources>

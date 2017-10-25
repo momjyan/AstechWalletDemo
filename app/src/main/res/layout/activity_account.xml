@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="#EFF0F2"
+    tools:context="com.example.sean.registrationactivity_lesson15.activities.AccountActivity">
+
+    <ScrollView
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/accOverView"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/overview_border"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="#F7F7F7"
+            android:text="Account Overview"
+            android:layout_marginBottom="10dp"
+            android:textColor="#006E9C"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Account ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/accountIdView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="account_id"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Account Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/accountTypeView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="account_type"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Account status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/accountStatusView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="account_status"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Last sign in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lastSigninView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="last_sign_in"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+            <Button
+                android:id="@+id/orderCardBtn"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/blue_button_border"
+                android:textAllCaps="false"
+                android:text="Order card"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/accOverView"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/overview_border"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="#F7F7F7"
+            android:text="Card Overview"
+            android:layout_marginBottom="10dp"
+            android:textColor="#006E9C"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Bank Account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/bankAccountView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="bank_account"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Card Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/cardNumberView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="card_number"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Card Expiration Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/expirationDateView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="expiration_date"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Card Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/cardStatusView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="card_status"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Card Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/cardTypeView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="card_type"
+                android:textColor="#008AC4"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/inside_overview_border"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/balanceView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="balance"
+                android:textColor="#008AC4"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/cardIdSpinner"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+            </Spinner>
+            <Button
+                android:id="@+id/getStatementBtn"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/blue_button_border"
+                android:textAllCaps="false"
+                android:text="Get Statment"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+            <Button
+                android:id="@+id/yourDocBtn"
+                android:textColor="#526E9C"
+                android:background="#F2F6F9"
+                android:text="Your Documents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/recentTopupBtn"
+                android:textColor="#526E9C"
+                android:background="#EEEFF0"
+                android:text="Recent Top Ups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

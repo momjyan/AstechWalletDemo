@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sean.registrationactivity_lesson15">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="register" />
+        <activity
+            android:name=".MainActivity"
+            android:label="main" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".NavigationDrawer" />
+        <activity android:name=".activities.AccountActivity" />
+        <activity android:name=".activities.TopUpActivity" />
+        <activity android:name=".activities.HistoryActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".PersonalInfoEdit"></activity>
+    </application>
+
+</manifest>

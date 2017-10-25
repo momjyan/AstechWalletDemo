@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/borders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:background="#228BB6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:text="Sign Up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#008AC4"
+            android:text="@string/WandC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Country of residence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:entries="@array/countries_array"
+            android:background="@drawable/borders"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:entries="@array/currency"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/borders"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:entries="@array/documentTypes"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:hint="Number"
+                android:background="@drawable/borders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="30dp"
+            android:textColor="#ffffff"
+            android:background="#8FC8DF"
+            android:textSize="15sp"
+            android:text="You won't be able to change your wallet currrency once your account has been opened"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/overview_border"
+        android:textAllCaps="false"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="next"
+        android:textAllCaps="false"
+        android:text="Next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="150dp"
+        android:layout_height="55dp" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Account"
+            android:icon="@drawable/account_ic"
+            android:id="@+id/account_item"></item>
+        <item android:title="Top Up"
+            android:icon="@drawable/topup_ic"
+            android:id="@+id/topup_item"></item>
+        <item android:title="History"
+            android:icon="@drawable/history_ic"
+            android:id="@+id/history_item"></item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Settings"
+            android:icon="@drawable/settings_ic"
+            android:id="@+id/settings_item"></item>
+        <item android:title="Logout"
+            android:icon="@drawable/logout_ic"
+            android:id="@+id/logout_item"></item>
+    </group>
+    <item android:title="Offers">
+        <menu>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="enter_email_ru">Введите свою почту</string>
+    <string name="enter_password_ru">Введите ваш пароль</string>
+    <string name="login_button_text_ru">Авторизоваться</string>
+    <string name="join_button_text_ru">Присоединись</string>
+    <string name="forgot_password_ru">Забыли пароль?</string>
+    <string name="password_view_ru">пароль</string>
+    <string name="back_to_login_ru">назад</string>
+    <string name="restore_ru">Восстановить</string>
+</resources>

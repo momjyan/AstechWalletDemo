@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/signupparttwo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/borders"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button">
+        <TextView
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:background="#228BB6"
+            android:layout_marginBottom="5dp"
+            android:text="Sign Up"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textColor="#008AC4"
+            android:textSize="30sp"
+            android:text="PERSONAL DETAILS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="First name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:typeface="monospace"
+            android:hint="Enter your first name"
+            android:background="@drawable/borders"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Last name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:typeface="monospace"
+            android:hint="Enter your last name"
+            android:background="@drawable/borders"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:entries="@array/genders"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Date of birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <DatePicker
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></DatePicker>
+
+    </LinearLayout>
+    <Button
+        android:onClick="next"
+        android:textAllCaps="false"
+        android:text="Next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
+
+</RelativeLayout>

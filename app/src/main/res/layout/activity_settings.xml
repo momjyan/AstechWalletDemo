@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sean.registrationactivity_lesson15.activities.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/overview_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:background="#F9F9F9"
+                    android:textSize="30sp"
+                    android:textColor="#006E9C"
+                    android:text="Personal information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:background="#ffffff"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Address"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:editable="true"
+                        android:id="@+id/addressView"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#ffffff"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Phone number"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:editable="true"
+                        android:id="@+id/phoneView"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#ffffff"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Skype username"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:editable="true"
+                        android:id="@+id/skypeView"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#ffffff"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Account status"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:editable="true"
+                        android:id="@+id/accStatusView"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/editPD"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:textColor="#008ACF"
+                        android:text="@string/edit"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:textColor="#008ACF"
+                        android:text="@string/closeAcc"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/overview_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:background="#F9F9F9"
+                    android:textColor="#006E9C"
+                    android:textSize="30sp"
+                    android:text="Account Security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="Password"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/PasswordView"
+                        android:password="true"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/editPassV"
+                    android:textColor="#008ACF"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:text="@string/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/overview_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:background="#f7f7f7"
+                    android:textColor="#006E9C"
+                    android:text="Email preferences"
+                    android:textSize="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:textSize="20sp"
+                    android:text="Email Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/emailView"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:textSize="20sp"
+                    android:text="Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

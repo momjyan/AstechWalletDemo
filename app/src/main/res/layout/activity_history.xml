@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F2"
+    android:orientation="vertical"
+    tools:context="com.example.sean.registrationactivity_lesson15.activities.HistoryActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/overview_border"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:id="@+id/spinnersLine"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/transactionSpinner"
+            android:textAlignment="center"
+            android:spinnerMode="dropdown"
+            android:entries="@array/transactionSpinnerItems"
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:textAlignment="center"
+            android:spinnerMode="dropdown"
+            android:entries="@array/paymentSpinnerItems"
+            android:layout_marginLeft="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dateLine"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/spinnersLine"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/fromDateView"
+            android:hint="from"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/toDateView"
+            android:textAlignment="center"
+            android:hint="To"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/dateLine"
+        android:orientation="horizontal"
+        android:id="@+id/buttonsLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/applyTopUpBtn"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/apply_button_border"
+            android:textAllCaps="false"
+            android:text="Apply"
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/clearTopUpBtn"
+            android:textSize="20sp"
+            android:textColor="#006EB0"
+            android:background="@drawable/clear_button_border"
+            android:textAllCaps="false"
+            android:text="Clear"
+            android:layout_marginLeft="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
